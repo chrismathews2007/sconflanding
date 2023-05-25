@@ -5,7 +5,7 @@ import React from 'react';
 const Faq = () => {
 	return (
 		<>
-			<section className='faq-area pt-125 pb-100'>
+			<section className='faq-area grey-bg pt-80 pb-80'>
 				<div className='container'>
 					<div className='row text-center'>
 						<div className='col-lg-12 col-md-12 col-12'>

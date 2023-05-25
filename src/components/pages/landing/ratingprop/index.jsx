@@ -17,7 +17,7 @@ export default function RatingProp() {
 				<div className='gap-4 text-center '>
 					<img src='/assets/img/paymentcards.png' height='30' />
 				</div>
-				<div className='d-flex gap-2 justify-content-center pt-80'>
+				<div className='d-flex gap-2 justify-content-center pt-40'>
 					<div className='col-lg-7 d-flex gap-2 justify-content-center'>
 						<img src='/assets/img/profile1.png' height='150' />
 						<div className='ms-3 gap-2'>

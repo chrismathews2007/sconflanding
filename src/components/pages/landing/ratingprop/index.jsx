@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function RatingProp() {
 	return (
-		<div className='grey-bg pt-80 pb-80 wow fadeInRight' data-wow-delay='.4s'>
+		<div className='grey-bg pt-100 pb-100 wow fadeInRight' data-wow-delay='.4s'>
 			<div className='container'>
 				<div className='gap-4 text-center '>
 					<Text h2>

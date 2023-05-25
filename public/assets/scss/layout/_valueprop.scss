@@ -1,0 +1,36 @@
+@use '../utils' as *;
+.valueprop {
+    &__sub-title {
+        color: var(--tp-common-black);
+        display: inline-block;
+    }
+    &__title {
+        font-size: 55px;
+        color: var(--tp-common-black);
+        text-transform: capitalize;
+        font-weight: 700;
+        & br {
+            @media #{$xs} {
+                display: none;
+            }
+        }
+        @media #{$lg} {
+            font-size: 48px;
+        }
+        @media #{$md} {
+            font-size: 48px;
+        }
+        @media #{$xs} {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        & br {
+            @media #{$md} {
+                display: none;
+            }
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+}

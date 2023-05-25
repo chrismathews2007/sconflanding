@@ -1,0 +1,10 @@
+@use '../utils' as *;
+.steps {
+    flex-direction: row;
+    @media #{$md} {
+        flex-direction: column;
+    }
+    @media #{$xs} {
+        flex-direction: column;
+    }
+}

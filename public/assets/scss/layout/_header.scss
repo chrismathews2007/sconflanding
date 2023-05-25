@@ -11,7 +11,7 @@
 }
 
 .main-menu {
-    margin: 0 0 0 60px;
+    margin: 0;
     @media #{$xl} {
         margin: 10px 0 0 0;
     }
@@ -25,21 +25,19 @@
                 margin: 0 30px;
                 font-size: 14px;
                 color: var(--tp-text-4);
-                font-weight: 700;
                 display: block;
-                text-transform: uppercase;
                 &:hover,
                 &.active {
                     color: var(--tp-text-orange);
                 }
                 @media #{$xxl} {
-                    font-size: 12px;
+                    font-size: 13px;
                 }
                 @media #{$xxl,$xl} {
                     margin: 0 20px;
                 }
                 @media #{$xl} {
-                    font-size: 12px;
+                    font-size: 13px;
                 }
             }
             &.has-dropdown {

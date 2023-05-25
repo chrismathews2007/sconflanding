@@ -1,0 +1,91 @@
+@use '../utils' as *;
+.text {
+    color: var(--tp-common-black);
+    &__sub-heading {
+        display: inline-block;
+    }
+    &__h1 {
+        font-size: 60px;
+        font-weight: 700;
+        @media #{$xl} {
+            font-size: 50px;
+        }
+        @media #{$xs} {
+            font-size: 42px;
+        }
+    }
+    &__h2 {
+        font-size: 43px;
+        font-weight: 700;
+        @media #{$xl} {
+            font-size: 40px;
+        }
+        @media #{$xs} {
+            font-size: 32px;
+        }
+    }
+    &__h3 {
+        font-size: 32px;
+        font-weight: 700;
+        @media #{$xl} {
+            font-size: 30px;
+        }
+        @media #{$xs} {
+            font-size: 28px;
+        }
+    }
+    &__h4 {
+        font-size: 18px;
+        font-weight: 700;
+        @media #{$xl} {
+            font-size: 16px;
+        }
+        @media #{$xs} {
+            font-size: 16px;
+        }
+    }
+    & i {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 35px;
+        display: block;
+    }
+    &__link {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        display: inline-block;
+        &>i {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        &:hover {
+            color: var(--tp-icon-orange);
+            & i {
+                animation: tfLeftToRight 0.5s forwards;
+            }
+        }
+    }
+    & p {
+        font-size: 15px;
+        display: block;
+        padding-right: 55px;
+        @media #{$xxl} {
+            padding: 10px;
+        }
+        @media #{$xl,$md} {
+            padding: 0px;
+        }
+        @media #{$lg} {
+            padding: 0px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        @media #{$xs} {
+            padding: 0px;
+            font-size: 14px;
+            margin-right: 0;
+        }
+    }
+}

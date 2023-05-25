@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import NavMenu from './nav-menu';
 import useSticky from 'hooks/use-sticky';
 import Sidebar from '@/common/sidebar';
+import TopHeader from './topHeader';
 
 const Header = () => {
 	const { sticky } = useSticky();
@@ -66,14 +67,22 @@ const Header = () => {
 			</div>
 
 			<header className='d-none d-xl-block'>
+				<TopHeader />
 				<div
 					className={`header__area tp-home-one ${
 						sticky ? 'header-sticky' : ''
 					}`}
 					id='header-sticky'>
 					<div className='container-fluid'>
-						<div className='row align-items-center'>
-							<div className='col-xxl-2 col-lg-3'>
+						<div className='row align-items-center w-100 m-0 mx-auto'>
+							<div className='col-xxl-5 col-lg-6'>
+								<div className={`main-menu ${sticky ? 'sticky-menu' : ''}`}>
+									<nav id='mobile-menu'>
+										<NavMenu />
+									</nav>
+								</div>
+							</div>
+							<div className='col-xxl-2 col-lg-3 me-auto'>
 								<div className='logo'>
 									<Link href='/'>
 										{sticky ? (
@@ -84,36 +93,8 @@ const Header = () => {
 									</Link>
 								</div>
 							</div>
-							<div className='col-xxl-7 col-lg-6'>
-								<div className={`main-menu ${sticky ? 'sticky-menu' : ''}`}>
-									<nav id='mobile-menu'>
-										<NavMenu />
-									</nav>
-								</div>
-							</div>
 							<div className='col-xxl-3 col-lg-3 d-flex align-items-center justify-content-end'>
-								<div className='tp-bt-btn-banner'>
-									<a className='tp-bt-btn' href='tel:123456'>
-										<svg
-											width='14'
-											height='19'
-											viewBox='0 0 14 19'
-											fill='none'
-											xmlns='http://www.w3.org/2000/svg'>
-											<circle cx='2' cy='2' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='2' r='2' fill='#0E63FF' />
-											<circle cx='12' cy='2' r='2' fill='#0E63FF' />
-											<circle cx='12' cy='7' r='2' fill='#0E63FF' />
-											<circle cx='12' cy='12' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='7' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='12' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='17' r='2' fill='#0E63FF' />
-											<circle cx='2' cy='7' r='2' fill='#0E63FF' />
-											<circle cx='2' cy='12' r='2' fill='#0E63FF' />
-										</svg>
-										<span> </span> Register
-									</a>
-								</div>
+								<a href=''>$ USD</a>
 							</div>
 						</div>
 					</div>

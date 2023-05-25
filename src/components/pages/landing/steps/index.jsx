@@ -26,9 +26,9 @@ export default function Steps() {
 		<section id='tp-about-scroll' className='steps pt-95 pb-90 fix'>
 			<div className='container'>
 				<div className='row align-items-center'>
-					<div className='tp-section text-center'>
+					<div className='text-center'>
 						<Text h2>The Transformation</Text>
-						<Text subTitle>
+						<Text>
 							quis consequat, minim Ut iriure consectetuer ut dolore eum illum
 							feugait nulla esse et
 						</Text>

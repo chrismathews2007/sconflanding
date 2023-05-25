@@ -33,28 +33,6 @@ const Header = () => {
 						</div>
 						<div className='col-md-8 col-2'>
 							<div className='tp-mobile-bar d-flex align-items-center justify-content-end'>
-								<div className='tp-bt-btn-banner d-none d-md-block d-xl-none mr-30'>
-									<a className='tp-bt-btn' href='tel:123456'>
-										<svg
-											width='14'
-											height='19'
-											viewBox='0 0 14 19'
-											fill='none'
-											xmlns='http://www.w3.org/2000/svg'>
-											<circle cx='2' cy='2' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='2' r='2' fill='#0E63FF' />
-											<circle cx='12' cy='2' r='2' fill='#0E63FF' />
-											<circle cx='12' cy='7' r='2' fill='#0E63FF' />
-											<circle cx='12' cy='12' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='7' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='12' r='2' fill='#0E63FF' />
-											<circle cx='7' cy='17' r='2' fill='#0E63FF' />
-											<circle cx='2' cy='7' r='2' fill='#0E63FF' />
-											<circle cx='2' cy='12' r='2' fill='#0E63FF' />
-										</svg>
-										<span> </span> Register
-									</a>
-								</div>
 								<button
 									onClick={() => setIsActive(true)}
 									className='tp-menu-toggle'>
@@ -85,11 +63,7 @@ const Header = () => {
 							<div className='col-xxl-2 col-lg-3 me-auto'>
 								<div className='logo'>
 									<Link href='/'>
-										{sticky ? (
-											<img src='/assets/img/logo/logo_lite.png' alt='logo' />
-										) : (
-											<img src='/assets/img/logo/logo.png' alt='logo' />
-										)}
+										<img src='/assets/img/logo/logo_lite.png' alt='logo' />
 									</Link>
 								</div>
 							</div>

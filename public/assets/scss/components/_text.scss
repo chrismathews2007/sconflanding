@@ -5,7 +5,7 @@
         display: inline-block;
     }
     &__h1 {
-        font-size: 60px;
+        font-size: 80px;
         font-weight: 700;
         @media #{$xl} {
             font-size: 50px;
@@ -15,7 +15,7 @@
         }
     }
     &__h2 {
-        font-size: 43px;
+        font-size: 53px;
         font-weight: 700;
         @media #{$xl} {
             font-size: 40px;
@@ -67,12 +67,12 @@
             }
         }
     }
-    & p {
-        font-size: 15px;
+    &__p {
+        font-size: 18px;
         display: block;
         padding-right: 55px;
         @media #{$xxl} {
-            padding: 10px;
+            padding: 0px;
         }
         @media #{$xl,$md} {
             padding: 0px;
@@ -80,7 +80,6 @@
         @media #{$lg} {
             padding: 0px;
             font-size: 14px;
-            margin-bottom: 20px;
         }
         @media #{$xs} {
             padding: 0px;

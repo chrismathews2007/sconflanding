@@ -100,7 +100,7 @@
     &::after {
         content: "";
         height: 300px;
-        width: 300px;
+        width: 500px;
         background-color: #13D9A8;
         border-radius: 50%;
         position: absolute;
@@ -109,5 +109,9 @@
         transform: translateY(-50%) translateX(-50%) scale(0);
         transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         z-index: -1;
+    }
+    &.large {
+        padding-left: 90px;
+        padding-right: 90px;
     }
 }

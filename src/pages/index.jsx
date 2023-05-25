@@ -8,6 +8,7 @@ import Steps from '@/components/pages/landing/steps';
 import ImageContent from '@/components/pages/landing/imageContent';
 import RatingProp from '@/components/pages/landing/ratingprop';
 import ExploreSeries from '@/components/pages/landing/exploreSeries';
+import Faq from '@/components/pages/landing/faq';
 
 const index = () => {
 	return (
@@ -25,6 +26,7 @@ const index = () => {
 					<ImageContent />
 					<RatingProp />
 					<ExploreSeries />
+					<Faq />
 				</div>
 			</Layout>
 		</Wrapper>

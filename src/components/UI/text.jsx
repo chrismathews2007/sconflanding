@@ -14,7 +14,7 @@ export default function Text({ h1, h2, h3, h4, h5, subTitle, mb, children }) {
 	) : subTitle ? (
 		<span className={`text__sub-heading ${mb ? mb : 'mb-20'}`}>{children}</span>
 	) : (
-		<p className={`text__p ${mb ? mb : 'mb-0'}'`}>{children}</p>
+		<p className={`text__p ${mb ? mb : 'mb-0'}`}>{children}</p>
 	);
 
 	return renderText;

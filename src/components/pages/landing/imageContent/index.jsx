@@ -39,7 +39,7 @@ export default function ImageContent() {
 						{DATA.map((item, i) => {
 							return (
 								<div key={i} className='d-flex align-items-center mb-10'>
-									<i class='fa-solid fa-circle-check pe-2 mb-0'></i>
+									<i className='fa-solid fa-circle-check pe-2 mb-0'></i>
 									<Text>{item.value}</Text>
 								</div>
 							);
@@ -51,11 +51,11 @@ export default function ImageContent() {
 						</Link>
 						<Text>
 							<span className='pe-2'>
-								<i class='fa-solid fa-star text-success'></i>
-								<i class='fa-solid fa-star text-success'></i>
-								<i class='fa-solid fa-star text-success'></i>
-								<i class='fa-solid fa-star text-success'></i>
-								<i class='fa-solid fa-star text-success'></i>
+								<i className='fa-solid fa-star text-success'></i>
+								<i className='fa-solid fa-star text-success'></i>
+								<i className='fa-solid fa-star text-success'></i>
+								<i className='fa-solid fa-star text-success'></i>
+								<i className='fa-solid fa-star text-success'></i>
 							</span>
 							Rated 4.9/5 by 100’s of verified Students
 						</Text>

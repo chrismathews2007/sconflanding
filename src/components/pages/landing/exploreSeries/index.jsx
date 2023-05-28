@@ -80,7 +80,7 @@ export default function ExploreSeries() {
 				<div>
 					{[...Array(rating)].map(() => (
 						<span>
-							<i class='fa-solid fa-star text-warning'></i>
+							<i className='fa-solid fa-star text-warning'></i>
 						</span>
 					))}
 				</div>
@@ -105,11 +105,11 @@ export default function ExploreSeries() {
 				<div className='gap-4 text-center '>
 					<Text mb='mb-20'>
 						<span>
-							<i class='fa-solid fa-star text-success'></i>
-							<i class='fa-solid fa-star text-success'></i>
-							<i class='fa-solid fa-star text-success'></i>
-							<i class='fa-solid fa-star text-success'></i>
-							<i class='fa-solid fa-star text-success'></i>
+							<i className='fa-solid fa-star text-success'></i>
+							<i className='fa-solid fa-star text-success'></i>
+							<i className='fa-solid fa-star text-success'></i>
+							<i className='fa-solid fa-star text-success'></i>
+							<i className='fa-solid fa-star text-success'></i>
 						</span>
 						Rated 4.9/5 by 100’s of verified Students
 					</Text>

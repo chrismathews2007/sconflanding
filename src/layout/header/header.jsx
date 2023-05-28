@@ -5,7 +5,7 @@ import useSticky from 'hooks/use-sticky';
 import Sidebar from '@/common/sidebar';
 import TopHeader from './topHeader';
 
-const Header = () => {
+const Header = ({ topHeader }) => {
 	const { sticky } = useSticky();
 	const [isActive, setIsActive] = useState(false);
 
@@ -45,7 +45,7 @@ const Header = () => {
 			</div>
 
 			<header className='d-none d-xl-block'>
-				<TopHeader />
+				{topHeader && <TopHeader />}
 				<div
 					className={`header__area tp-home-one ${
 						sticky ? 'header-sticky' : ''

@@ -9,24 +9,19 @@ import ImageContent from '@/components/pages/landing/imageContent';
 import RatingProp from '@/components/pages/landing/ratingprop';
 import ExploreSeries from '@/components/pages/landing/exploreSeries';
 import Faq from '@/components/pages/landing/faq';
+import Checkout from '@/components/pages/checkout';
 
 const index = () => {
 	return (
 		<Wrapper>
-			<SEO pageTitle='Home' />
-			<Layout topHeader>
+			<SEO pageTitle='Checkout' />
+			<Layout>
 				<div
 					style={{
 						width: '100%',
-						paddingTop: 80,
+						paddingTop: 120,
 					}}>
-					<ValueProp />
-					<Brands />
-					<Steps />
-					<ImageContent />
-					<RatingProp />
-					<ExploreSeries />
-					<Faq />
+					<Checkout />
 				</div>
 			</Layout>
 		</Wrapper>

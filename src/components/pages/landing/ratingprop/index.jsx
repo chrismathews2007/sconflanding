@@ -29,11 +29,11 @@ export default function RatingProp() {
 							<Text h4>Cristina</Text>
 							<div>
 								<span>
-									<i class='fa-solid fa-star text-warning'></i>
-									<i class='fa-solid fa-star text-warning'></i>
-									<i class='fa-solid fa-star text-warning'></i>
-									<i class='fa-solid fa-star text-warning'></i>
-									<i class='fa-solid fa-star text-warning'></i>
+									<i className='fa-solid fa-star text-warning'></i>
+									<i className='fa-solid fa-star text-warning'></i>
+									<i className='fa-solid fa-star text-warning'></i>
+									<i className='fa-solid fa-star text-warning'></i>
+									<i className='fa-solid fa-star text-warning'></i>
 								</span>
 							</div>
 						</div>

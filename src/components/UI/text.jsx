@@ -7,6 +7,7 @@ export default function Text({
 	h4,
 	h5,
 	subTitle,
+	small,
 	align,
 	color,
 	mb,
@@ -50,6 +51,8 @@ export default function Text({
 		</h5>
 	) : subTitle ? (
 		<span className={`text__sub-heading ${mb ? mb : 'mb-20'}`}>{children}</span>
+	) : small ? (
+		<span className={`text__small`}>{children}</span>
 	) : (
 		<p
 			className={`text__p ${mb ? mb : 'mb-0'}  ${color ? color : null} 

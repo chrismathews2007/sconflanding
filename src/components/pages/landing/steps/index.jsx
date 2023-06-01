@@ -5,19 +5,25 @@ export default function Steps() {
 	const DATA = [
 		{
 			icon: '/assets/img/steps/cart.png',
-			title: 'Step 1',
+			title: 'Register as Speaker',
 			shortNotes:
 				'Increase your conversion rates in real-time, regardless of your chosen platform or level of expertise',
 		},
 		{
 			icon: '/assets/img/steps/shipping.png',
-			title: 'Step 2',
+			title: 'Submit your Abstract',
 			shortNotes:
 				'Wqui blandit velit sed exerci commodo facilisis augue sit suscipit ex enim vero consequat,',
 		},
 		{
 			icon: '/assets/img/steps/happy.png',
-			title: 'Step 3',
+			title: 'Speak at our Conferences',
+			shortNotes:
+				'Svero laoreet consequat, delenit vel dolore dolor luptatum te esse praesent vulputate aliquip aliquam',
+		},
+		{
+			icon: '/assets/img/steps/happy.png',
+			title: 'Get Promoted',
 			shortNotes:
 				'Svero laoreet consequat, delenit vel dolore dolor luptatum te esse praesent vulputate aliquip aliquam',
 		},
@@ -27,10 +33,10 @@ export default function Steps() {
 			<div className='container'>
 				<div className='row align-items-center'>
 					<div className='text-center'>
-						<Text h2>The Transformation</Text>
+						<Text h2>Help at every stage towards Your Personal Branding</Text>
 						<Text>
-							quis consequat, minim Ut iriure consectetuer ut dolore eum illum
-							feugait nulla esse et
+							Be a part of the speaker-centric universe of STAR Conferences
+							through four streamlined steps
 						</Text>
 					</div>
 				</div>
@@ -41,7 +47,6 @@ export default function Steps() {
 								<img src={item.icon} alt={item.title} height='50' />
 							</div>
 							<Text h4>{item.title}</Text>
-							<Text>{item.shortNotes}</Text>
 						</div>
 					))}
 				</div>

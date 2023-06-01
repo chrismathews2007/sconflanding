@@ -150,7 +150,7 @@ const Checkout = () => {
 											</Text>
 										</div>
 										<div className='d-flex flex-wrap'>
-											<div className='col-md-6 p-2 ps-0'>
+											<div className='col-12 col-md-6 p-2 ps-0'>
 												<div className='form-floating mb-3'>
 													<input
 														type='text'
@@ -161,7 +161,7 @@ const Checkout = () => {
 													<label htmlFor='floatingInput'>First name</label>
 												</div>
 											</div>
-											<div className='col-md-6 p-2 pe-0'>
+											<div className='col-12 col-md-6 p-2 pe-0'>
 												<div className='form-floating mb-3'>
 													<input
 														type='text'
@@ -172,7 +172,7 @@ const Checkout = () => {
 													<label htmlFor='floatingInput'>Last name</label>
 												</div>
 											</div>
-											<div className='col-md-12'>
+											<div className='col-12'>
 												<div className='form-floating mb-3'>
 													<input
 														type='text'
@@ -185,7 +185,7 @@ const Checkout = () => {
 													</label>
 												</div>
 											</div>
-											<div className='col-md-12'>
+											<div className='col-12'>
 												<div className='form-floating mb-3'>
 													<input
 														type='text'
@@ -196,7 +196,7 @@ const Checkout = () => {
 													<label htmlFor='floatingInput'>Address</label>
 												</div>
 											</div>
-											<div className='col-md-12'>
+											<div className='col-12'>
 												<div className='form-floating mb-3'>
 													<input
 														type='text'
@@ -209,7 +209,7 @@ const Checkout = () => {
 													</label>
 												</div>
 											</div>
-											<div className='col-md-6 p-2 ps-0'>
+											<div className='col-12 col-md-6 p-2 ps-0'>
 												<Select
 													defaultValue={selectedCountry}
 													onChange={setSelectedCountry}
@@ -218,7 +218,7 @@ const Checkout = () => {
 													styles={customStyles}
 												/>
 											</div>
-											<div className='col-md-6 p-2 pe-0'>
+											<div className='col-12 col-md-6 p-2 pe-0'>
 												<Select
 													defaultValue={selectedCountry}
 													onChange={setSelectedCountry}
@@ -227,7 +227,7 @@ const Checkout = () => {
 													styles={customStyles}
 												/>
 											</div>
-											<div className='col-md-6 p-2 ps-0'>
+											<div className='col-12 col-md-6 p-2 ps-0'>
 												<Select
 													defaultValue={selectedCountry}
 													onChange={setSelectedCountry}
@@ -236,7 +236,7 @@ const Checkout = () => {
 													styles={customStyles}
 												/>
 											</div>
-											<div className='col-md-6 p-2 pe-0'>
+											<div className='col-12 col-md-6 p-2 pe-0'>
 												<div className='form-floating mb-3'>
 													<input
 														type='number'
@@ -247,7 +247,7 @@ const Checkout = () => {
 													<label htmlFor='floatingInput'>ZIP/Postal</label>
 												</div>
 											</div>
-											<div className='col-md-12'>
+											<div className='col-12'>
 												<div className='form-floating mb-3'>
 													<input
 														type='number'
@@ -258,7 +258,7 @@ const Checkout = () => {
 													<label htmlFor='floatingInput'>Phone Number</label>
 												</div>
 											</div>
-											<div className='col-md-12'>
+											<div className='col-12'>
 												<div className='form-floating mb-3'>
 													<textarea class='form-control' rows='3'></textarea>
 													<label htmlFor='floatingInput'>
@@ -280,7 +280,7 @@ const Checkout = () => {
 											</Text>
 											{isShipOpen && (
 												<div className='d-flex flex-wrap'>
-													<div className='col-md-6 p-2 ps-0'>
+													<div className='col-12 col-md-6 p-2 ps-0'>
 														<div className='form-floating mb-3'>
 															<input
 																type='text'
@@ -291,7 +291,7 @@ const Checkout = () => {
 															<label htmlFor='floatingInput'>First name</label>
 														</div>
 													</div>
-													<div className='col-md-6 p-2 pe-0'>
+													<div className='col-12 col-md-6 p-2 pe-0'>
 														<div className='form-floating mb-3'>
 															<input
 																type='text'
@@ -302,7 +302,7 @@ const Checkout = () => {
 															<label htmlFor='floatingInput'>Last name</label>
 														</div>
 													</div>
-													<div className='col-md-12'>
+													<div className='col-12'>
 														<div className='form-floating mb-3'>
 															<input
 																type='text'
@@ -315,7 +315,7 @@ const Checkout = () => {
 															</label>
 														</div>
 													</div>
-													<div className='col-md-12'>
+													<div className='col-12'>
 														<div className='form-floating mb-3'>
 															<input
 																type='text'
@@ -326,7 +326,7 @@ const Checkout = () => {
 															<label htmlFor='floatingInput'>Address</label>
 														</div>
 													</div>
-													<div className='col-md-12'>
+													<div className='col-12'>
 														<div className='form-floating mb-3'>
 															<input
 																type='text'
@@ -339,7 +339,7 @@ const Checkout = () => {
 															</label>
 														</div>
 													</div>
-													<div className='col-md-6 p-2 ps-0'>
+													<div className='col-12 col-md-6 p-2 ps-0'>
 														<Select
 															defaultValue={selectedCountry}
 															onChange={setSelectedCountry}
@@ -348,7 +348,7 @@ const Checkout = () => {
 															styles={customStyles}
 														/>
 													</div>
-													<div className='col-md-6 p-2 pe-0'>
+													<div className='col-12 col-md-6 p-2 pe-0'>
 														<Select
 															defaultValue={selectedCountry}
 															onChange={setSelectedCountry}
@@ -357,7 +357,7 @@ const Checkout = () => {
 															styles={customStyles}
 														/>
 													</div>
-													<div className='col-md-6 p-2 ps-0'>
+													<div className='col-12 col-md-6 p-2 ps-0'>
 														<Select
 															defaultValue={selectedCountry}
 															onChange={setSelectedCountry}
@@ -366,7 +366,7 @@ const Checkout = () => {
 															styles={customStyles}
 														/>
 													</div>
-													<div className='col-md-6 p-2 pe-0'>
+													<div className='col-12 col-md-6 p-2 pe-0'>
 														<div className='form-floating mb-3'>
 															<input
 																type='number'
@@ -377,7 +377,7 @@ const Checkout = () => {
 															<label htmlFor='floatingInput'>ZIP/Postal</label>
 														</div>
 													</div>
-													<div className='col-md-12'>
+													<div className='col-12'>
 														<div className='form-floating mb-3'>
 															<input
 																type='number'

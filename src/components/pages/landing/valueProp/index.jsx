@@ -5,16 +5,19 @@ import React from 'react';
 export default function ValueProp() {
 	const DATA = [
 		{
-			value:
-				'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh',
+			value: 'Exclusive Discounts on Your “Speaker Registrations”',
 		},
 		{
-			value:
-				'velit adipiscing dolore molestie veniam, aliquip nonummy vel vel enim facilisis erat',
+			value: 'Earn CPD Credits to Foster Professional Growth',
 		},
 		{
-			value:
-				'zzril facilisi. dolore feugiat ex velit Duis et eros suscipit tincidunt nisl',
+			value: 'Get Unlimited Access to STAR Community',
+		},
+		{
+			value: 'Elevate Your Visibility to New Heights',
+		},
+		{
+			value: 'Add Undeniable Credibility to Your Personal Brand  ',
 		},
 	];
 	return (
@@ -30,8 +33,9 @@ export default function ValueProp() {
 					</span>
 					Rated 4.9/5 by 100’s of verified Students
 				</Text>
-				<Text h1>
-					Value Proposition <br /> Featuring Benefit
+				<Text h2>
+					Curious about the extraordinary privileges <br />
+					and advantages we offer our esteemed speakers? 
 				</Text>
 				{DATA.map((item, i) => {
 					return (

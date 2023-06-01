@@ -9,6 +9,7 @@ import ImageContent from '@/components/pages/landing/imageContent';
 import RatingProp from '@/components/pages/landing/ratingprop';
 import ExploreSeries from '@/components/pages/landing/exploreSeries';
 import Faq from '@/components/pages/landing/faq';
+import Pricing from '@/components/pages/landing/pricing';
 
 const index = () => {
 	return (
@@ -25,6 +26,7 @@ const index = () => {
 					<Steps />
 					<ImageContent />
 					<RatingProp />
+					<Pricing />
 					<ExploreSeries />
 					<Faq />
 				</div>

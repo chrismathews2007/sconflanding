@@ -10,6 +10,8 @@ import RatingProp from '@/components/pages/landing/ratingprop';
 import ExploreSeries from '@/components/pages/landing/exploreSeries';
 import Faq from '@/components/pages/landing/faq';
 import Pricing from '@/components/pages/landing/pricing';
+import Cta_Area from '@/components/pages/landing/cta';
+import Discover from '@/components/pages/landing/discover';
 
 const index = () => {
 	return (
@@ -23,8 +25,9 @@ const index = () => {
 					}}>
 					<ValueProp />
 					<Brands />
+					<Cta_Area />
 					<Steps />
-					<ImageContent />
+					<Discover />
 					<RatingProp />
 					<Pricing />
 					<ExploreSeries />

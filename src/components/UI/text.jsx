@@ -15,31 +15,31 @@ export default function Text({
 	children,
 }) {
 	const renderText = h1 ? (
-		<h2
+		<h1
 			className={`text__h1 ${mb ? mb : 'mb-20'} ${
 				align ? align : 'text-left'
 			} ${color ? color : null}`}>
 			{children}
-		</h2>
+		</h1>
 	) : h2 ? (
 		<h2
 			className={`text__h2 ${mb ? mb : 'mb-20'} ${
 				align ? align : 'text-left'
-			}`}>
+			} ${color ? color : null} `}>
 			{children}
 		</h2>
 	) : h3 ? (
 		<h3
 			className={`text__h3 ${mb ? mb : 'mb-20'} ${
 				align ? align : 'text-left'
-			}`}>
+			} ${color ? color : null} `}>
 			{children}
 		</h3>
 	) : h4 ? (
 		<h4
 			className={`text__h4 ${mb ? mb : 'mb-20'} ${
 				align ? align : 'text-left'
-			}`}>
+			} ${color ? color : null} ${color ? color : null} `}>
 			{children}
 		</h4>
 	) : h5 ? (
@@ -50,9 +50,14 @@ export default function Text({
 			{children}
 		</h5>
 	) : subTitle ? (
-		<span className={`text__sub-heading ${mb ? mb : 'mb-20'}`}>{children}</span>
+		<span
+			className={`text__sub-heading ${mb ? mb : 'mb-20'}  ${
+				color ? color : null
+			}`}>
+			{children}
+		</span>
 	) : small ? (
-		<span className={`text__small`}>{children}</span>
+		<span className={`text__small  ${color ? color : null}`}>{children}</span>
 	) : (
 		<p
 			className={`text__p ${mb ? mb : 'mb-0'}  ${color ? color : null} 

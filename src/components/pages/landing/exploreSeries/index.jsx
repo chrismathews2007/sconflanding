@@ -91,10 +91,9 @@ export default function ExploreSeries() {
 		<div className='pt-100 pb-100 wow fadeInRight' data-wow-delay='.4s'>
 			<div className='container'>
 				<div className='gap-4 text-center '>
-					<Text h2>Explore by Series</Text>
-					<Text>
-						quis consequat, minim Ut iriure consectetuer ut dolore eum illum
-						feugait nulla esse et
+					<Text h2>
+						Join speakers from worldwide and Forge Meaningful Collaborations and
+						Partnerships.
 					</Text>
 				</div>
 				<div className='row mt-40 mb-40'>

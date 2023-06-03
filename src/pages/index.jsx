@@ -12,6 +12,8 @@ import Faq from '@/components/pages/landing/faq';
 import Pricing from '@/components/pages/landing/pricing';
 import Cta_Area from '@/components/pages/landing/cta';
 import Discover from '@/components/pages/landing/discover';
+import Unsure from '@/components/pages/landing/unsure';
+import Feedback from '@/components/pages/landing/feedback';
 
 const index = () => {
 	return (
@@ -24,13 +26,14 @@ const index = () => {
 						paddingTop: 80,
 					}}>
 					<ValueProp />
-					<Brands />
+					{/* <Brands /> */}
 					<Cta_Area />
 					<Steps />
 					<Discover />
-					<RatingProp />
 					<Pricing />
 					<ExploreSeries />
+					<Unsure />
+					<Feedback />
 					<Faq />
 				</div>
 			</Layout>

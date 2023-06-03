@@ -1,16 +1,17 @@
 @use '../utils' as *;
 
 /*----------------------------------------*/
+
+
 /*  18. FAQ CSS START
 /*----------------------------------------*/
-
 
 .faq-accordion {
     margin: 0 15px;
     @media #{$xs} {
         margin: 0 0;
     }
-    & .accordion-button{
+    & .accordion-button {
         color: var(--tp-theme-primary);
         background: none;
         position: relative;
@@ -56,6 +57,7 @@
         margin-bottom: 30px;
     }
     & .accordion-content {
+        color: 'red';
         border-bottom: 4px solid var(--tp-theme-blue);
         & p {
             padding: 0 75px 35px 45px;
@@ -67,9 +69,12 @@
             }
             & br {
                 @media #{$lg,$md,$xs} {
-                    display: none;                    
+                    display: none;
                 }
             }
+        }
+        & a {
+            color: 'red';
         }
     }
 }

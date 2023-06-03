@@ -1,30 +1,28 @@
 import AnswerQuestion from '@/common/answer-question';
-import Text from '@/components/UI/text';
 import React from 'react';
 
-const Faq = () => {
+const FaqArea = () => {
 	return (
-		<>
-			<section className='faq-area grey-bg pt-80 pb-80'>
-				<div className='container'>
-					<div className='row text-center'>
-						<div className='col-lg-12 col-md-12 col-12'>
-							<Text h2>The Transformation</Text>
-							<Text>
-								quis consequat, minim Ut iriure consectetuer ut dolore eum illum
-								feugait nulla esse et
-							</Text>
-						</div>
-					</div>
-					<div className='row'>
-						<div className='col-lg-12'>
-							<AnswerQuestion />
+		<section className='faq-area pt-40 pb-40 d-flex align-items-center'>
+			<div className='container'>
+				<div className='row text-center'>
+					<div className='col-lg-12 col-md-12 col-12'>
+						<div className='tp-section'>
+							<span className='tp-section__sub-title left-line right-line mb-20'>
+								Faq
+							</span>
+							<h3 className='tp-section__title mb-70'>General Question</h3>
 						</div>
 					</div>
 				</div>
-			</section>
-		</>
+				<div className='row'>
+					<div className='col-lg-12'>
+						<AnswerQuestion />
+					</div>
+				</div>
+			</div>
+		</section>
 	);
 };
 
-export default Faq;
+export default FaqArea;

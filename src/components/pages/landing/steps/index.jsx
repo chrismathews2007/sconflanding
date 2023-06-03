@@ -4,32 +4,34 @@ import React from 'react';
 export default function Steps() {
 	const DATA = [
 		{
-			icon: '/assets/img/steps/cart.png',
+			icon: '/assets/img/steps/register.png',
 			title: 'Register as Speaker',
 			shortNotes:
 				'Increase your conversion rates in real-time, regardless of your chosen platform or level of expertise',
 		},
 		{
-			icon: '/assets/img/steps/shipping.png',
+			icon: '/assets/img/steps/submit.png',
 			title: 'Submit your Abstract',
 			shortNotes:
 				'Wqui blandit velit sed exerci commodo facilisis augue sit suscipit ex enim vero consequat,',
 		},
 		{
-			icon: '/assets/img/steps/happy.png',
+			icon: '/assets/img/steps/speak.png',
 			title: 'Speak at our Conferences',
 			shortNotes:
 				'Svero laoreet consequat, delenit vel dolore dolor luptatum te esse praesent vulputate aliquip aliquam',
 		},
 		{
-			icon: '/assets/img/steps/happy.png',
+			icon: '/assets/img/steps/promote.png',
 			title: 'Get Promoted',
 			shortNotes:
 				'Svero laoreet consequat, delenit vel dolore dolor luptatum te esse praesent vulputate aliquip aliquam',
 		},
 	];
 	return (
-		<section id='tp-about-scroll' className='steps pt-95 pb-90 fix'>
+		<section
+			id='tp-about-scroll'
+			className='steps pt-40 pb-40 fix d-flex align-items-center'>
 			<div className='container'>
 				<div className='row align-items-center'>
 					<div className='text-center'>
@@ -44,7 +46,7 @@ export default function Steps() {
 					{DATA.map((item, i) => (
 						<div className='step-item text-center'>
 							<div className='mt-20 mb-20'>
-								<img src={item.icon} alt={item.title} height='50' />
+								<img src={item.icon} alt={item.title} height='150' />
 							</div>
 							<Text h4>{item.title}</Text>
 						</div>

@@ -7,10 +7,7 @@ const Pricing = ({ dark, p_bottom }) => {
 	const [isAccomdation, setIsAccomdation] = useState(false);
 	return (
 		<>
-			<section
-				className={`pricing-area ${dark ? 'theme-bg pt-125' : ''} ${
-					p_bottom ? '' : 'pt-120'
-				} pb-90`}>
+			<section className={`pricing-area pt-40 pb-40 d-flex align-items-center`}>
 				<div className='container'>
 					<div className='row text-center'>
 						<div className='col-lg-12 col-md-12 col-12'>
@@ -53,7 +50,7 @@ const Pricing = ({ dark, p_bottom }) => {
 											id={item.id}
 											onClick={() => setIsAccomdation(!isAccomdation)}
 										/>
-										<label for={item.id}>I want accomdation too</label>
+										<label for={item.id}>i'd like to add accomdation</label>
 									</div>
 
 									<div className={`tp-price__btn ${item.btn_color} `}>

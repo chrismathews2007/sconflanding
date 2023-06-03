@@ -1,4 +1,8 @@
 @use '../utils' as *;
+section {
+    min-height: 100vh;
+}
+
 .tp-section {
     &__sub-title {
         text-transform: uppercase;

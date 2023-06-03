@@ -21,7 +21,7 @@ export default function ValueProp() {
 		},
 	];
 	return (
-		<section className='valueprop container-fluid bg-white pt-40 pb-40'>
+		<section className='valueprop container-fluid bg-white pt-40 pb-40 d-flex align-items-center'>
 			<div className='container'>
 				<Text>
 					<span>

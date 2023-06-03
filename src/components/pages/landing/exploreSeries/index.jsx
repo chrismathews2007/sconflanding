@@ -5,64 +5,40 @@ import React from 'react';
 export default function ExploreSeries() {
 	const DATA = [
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
+			image: 'assets/img/series/isha farha quraishy.jpeg',
+			title: 'Isha Farha Quraishy',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
+			image: 'assets/img/series/dr angelica wagner.jpeg',
+			title: 'Dr Angelica Wagner',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 4,
+			image: 'assets/img/series/dr milos pocekovac.jpeg',
+			title: 'Dr Milos Pocekovac',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
+			image: 'assets/img/series/kristen thomasino.webp',
+			title: 'Kristen Thomasino',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
+			image: 'assets/img/series/Jackie Lacroix.jpeg',
+			title: 'Dr Angelica Wagner',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 4,
+			image: 'assets/img/series/dr kalpana sundar.jpeg',
+			title: 'Dr Kalpana Sundar',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
+			image: 'assets/img/series/nim stant.jpeg',
+			title: 'Nim Stant',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
+			image: 'assets/img/series/dr debra dupree.png',
+			title: 'Dr Debra Dupree',
 		},
 		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 4,
-		},
-		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
-		},
-		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 5,
-		},
-		{
-			image: 'assets/img/womenConf.png',
-			title: 'Hendrerit praesent te dolore Lorem',
-			rating: 4,
+			image: 'assets/img/series/dr remya nirmala.jpeg',
+			title: 'Dr Remya Nirmala',
 		},
 	];
 	const Card = ({ data }) => {
@@ -71,24 +47,19 @@ export default function ExploreSeries() {
 			<div className='col-6 col-md-4 col-lg-3 mb-20'>
 				<div
 					className='w-100 mb-10'
-					style={{ height: '200px', overflow: 'hidden' }}>
+					style={{ with: '100%', overflow: 'hidden' }}>
 					<img src={image} alt='' className='w-100' />
 				</div>
 				<Text h4 mb='mb-0'>
 					{title}
 				</Text>
-				<div>
-					{[...Array(rating)].map(() => (
-						<span>
-							<i className='fa-solid fa-star text-warning'></i>
-						</span>
-					))}
-				</div>
 			</div>
 		);
 	};
 	return (
-		<div className='pt-100 pb-100 wow fadeInRight' data-wow-delay='.4s'>
+		<section
+			className='pt-40 pb-40 wow fadeInRight d-flex align-items-center'
+			data-wow-delay='.4s'>
 			<div className='container'>
 				<div className='gap-4 text-center '>
 					<Text h2>
@@ -96,7 +67,7 @@ export default function ExploreSeries() {
 						Partnerships.
 					</Text>
 				</div>
-				<div className='row mt-40 mb-40'>
+				<div className='row mt-40 mb-40 justify-content-center'>
 					{DATA.map((item, i) => {
 						return <Card data={item} />;
 					})}
@@ -120,6 +91,6 @@ export default function ExploreSeries() {
 					<img src='/assets/img/paymentcards.png' height='30' />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

@@ -41,7 +41,7 @@ export default function Discover() {
 		},
 	];
 	return (
-		<div className='row forums '>
+		<section className='row forums d-flex align-items-center pt-40 pb-40'>
 			<div className='container'>
 				<div className='row align-items-center'>
 					<div className='text-center'>
@@ -80,6 +80,6 @@ export default function Discover() {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

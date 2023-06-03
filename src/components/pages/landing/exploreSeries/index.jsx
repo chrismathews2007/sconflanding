@@ -21,8 +21,8 @@ export default function ExploreSeries() {
 			title: 'Kristen Thomasino',
 		},
 		{
-			image: 'assets/img/series/Jackie Lacroix.jpeg',
-			title: 'Dr Angelica Wagner',
+			image: 'assets/img/series/jackie lacroix.jpeg',
+			title: 'Jackie Lacroix',
 		},
 		{
 			image: 'assets/img/series/dr kalpana sundar.jpeg',

@@ -85,7 +85,7 @@ const answer_question_data = [
 				To gain a deeper understanding of how our{' '}
 				<a href='https://www.starconferences.org/blog/star-conferences-speaker-marketing-program'>
 					Speaker Marketing Program
-				</a>
+				</a>{' '}
 				can assist you in growing professionally as a speaker, we encourage you
 				to read our relevant blog post.
 			</>

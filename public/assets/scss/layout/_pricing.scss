@@ -1,11 +1,13 @@
 @use '../utils' as *;
 
 /*----------------------------------------*/
+
+
 /*  17. PRICING CSS START
 /*----------------------------------------*/
 
 .tp-price {
-    padding: 35px 42px 45px 55px;
+    padding: 20px;
     border: 1px solid var(--tp-border-primary);
     @include transition(.3s);
     border-top: 4px solid var(--tp-theme-blue);
@@ -24,20 +26,14 @@
             text-transform: uppercase;
         }
     }
-    &__content {
-        & p {
-            font-size: 20px;
-            font-weight: 500;
-        }
-    }
     &__value {
-        font-size: 45px; 
+        font-size: 45px;
         & span {
             color: var(--tp-text-2);
             font-size: 14px;
             font-weight: 400;
             display: inline-block;
-        }                                                                                
+        }
     }
     &__features {
         & ul {
@@ -98,6 +94,7 @@
         }
     }
 }
+
 .tp-price.active {
     box-shadow: 0px 26px 33px rgba(77, 97, 130, 0.05);
     border: none;
@@ -106,22 +103,26 @@
         border-top: 4px solid var(--tp-theme-pink);
     }
 }
+
 .tp-pink-btn {
     & a {
         background-color: var(--tp-theme-pink);
     }
 }
+
 .tp-yearly-price {
     border-top: 4px solid var(--tp-theme-secondary);
     &:hover {
         border-top: 4px solid var(--tp-theme-secondary);
     }
 }
+
 .tp-green-btn {
     & a {
         background-color: var(--tp-theme-secondary);
     }
 }
+
 .tp-white-price {
     background-color: #1C155E;
     border: none;
@@ -146,10 +147,12 @@
         opacity: .3;
     }
 }
+
 .tp-white-price.active {
     border-top: 4px solid var(--tp-theme-pink);
     background-color: #292176;
 }
-.tp-white-price.tp-yearly-price{
-    border-top: 4px solid  var(--tp-theme-secondary);
+
+.tp-white-price.tp-yearly-price {
+    border-top: 4px solid var(--tp-theme-secondary);
 }

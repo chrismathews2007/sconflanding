@@ -75,11 +75,12 @@ const Feedback = () => {
 									<div className='tp-testi__avata'>
 										<img src={item.img} alt='testimonial-avata' width='100' />
 									</div>
-									<div className='tp-testi__content text-center'>
-										<p>{item.des}</p>
-										<h5 className='tp-testi__avata-title'>{item.name}</h5>
-										<span className='tp-testi__ava-position'>{item.title}</span>
-										<span className='tp-testi__ava-position'>{item.title}</span>
+									<div className='tp-testi__content text-center '>
+										<Text>{item.des}</Text>
+										<Text h5 mb='mb-0 mt-25'>
+											{item.name}
+										</Text>
+										<Text small>{item.title}</Text>
 									</div>
 								</div>
 							</SwiperSlide>

@@ -18,16 +18,31 @@ const Pricing = ({ dark, p_bottom }) => {
 					</div>
 					<div className='row'>
 						{pricing_data.map((item) => (
-							<div key={item.id} className={`col-lg-4 col-md-6`}>
+							<div key={item.id} className={`col-lg-3 col-md-6`}>
 								<div
 									className={`tp-price ${item.class} ${
 										dark ? 'tp-white-price' : ''
-									} mb-40`}>
-									<div className='tp-price__badge mb-45'>
-										<Text h3>{item.title}</Text>
+									} mb-40 position-relative`}>
+									<div
+										className='d-flex justify-content-center p-2 position-absolute'
+										style={{ right: -10, top: -10 }}>
+										<div
+											className='text-center bg-danger'
+											style={{ padding: '5px 15px' }}>
+											<Text small color='text-white'>
+												Super Early Bird
+											</Text>
+										</div>
 									</div>
-									<div className='tp-price__heading mb-45'>
-										<div className='tp-price__content'>
+									<div
+										className='tp-price__badge mb-15 mt-25'
+										style={{ minHeight: 70 }}>
+										<Text h4>{item.title}</Text>
+									</div>
+									<div className='tp-price__heading mb-10'>
+										<div
+											className='tp-price__content'
+											style={{ minHeight: 140 }}>
 											<Text h2>${item.price}</Text>
 											<Text>{item.sub_title}</Text>
 										</div>
@@ -43,37 +58,27 @@ const Pricing = ({ dark, p_bottom }) => {
 											))}
 										</ul>
 									</div>
-									<div className='input-group mb-3 d-flex align-items-center'>
+									<div className=' mb-3 d-flex align-items-center'>
 										<input
 											className='mt-0 me-2'
 											type='checkbox'
 											id={item.id}
 											onClick={() => setIsAccomdation(!isAccomdation)}
 										/>
-										<label for={item.id}>i'd like to add accomdation</label>
+										<label for={item.id} style={{ fontSize: 12 }}>
+											i'd like to add accomdation
+										</label>
 									</div>
 
-									<div className={`tp-price__btn ${item.btn_color} `}>
+									<div className={`tp-price__btn ${item.btn_color}`}>
 										<Link
+											className='w-100'
 											href={`${
 												isAccomdation
 													? item.paymentWithAccomdation
 													: item.payment
 											}`}>
 											Register
-											<span>
-												<svg
-													width='22'
-													height='8'
-													viewBox='0 0 22 8'
-													fill='none'
-													xmlns='http://www.w3.org/2000/svg'>
-													<path
-														d='M21.3536 4.35356C21.5488 4.15829 21.5488 3.84171 21.3536 3.64645L18.1716 0.464468C17.9763 0.269206 17.6597 0.269205 17.4645 0.464468C17.2692 0.65973 17.2692 0.976312 17.4645 1.17157L20.2929 4L17.4645 6.82843C17.2692 7.02369 17.2692 7.34027 17.4645 7.53554C17.6597 7.7308 17.9763 7.7308 18.1716 7.53554L21.3536 4.35356ZM-4.37114e-08 4.5L21 4.5L21 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z'
-														fill='white'
-													/>
-												</svg>
-											</span>
 										</Link>
 									</div>
 								</div>

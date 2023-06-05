@@ -56,24 +56,7 @@ const pricing_data = [{
     {
         id: 4,
         color: "tp-pink-btn",
-        title: "Audio Video Presentation",
-        price: 199,
-        class: "tp-yearly-price",
-        btn_color: "tp-green-btn",
-
-        price_features: [
-            { active: "", list: "Certificate" },
-            { active: "", list: "CPD Credits" }
-        ],
-
-        payment: 'https://ecorfy.swell.store/buy/w9tTiLiM',
-        paymentWithAccomdation: 'https://ecorfy.swell.store/buy/gMNFOhnX',
-    },
-
-    {
-        id: 5,
-        color: "tp-pink-btn",
-        title: "Electronic Poster Presentation",
+        title: "Audio Video / Electronic Poster Presentation",
         price: 199,
         class: "tp-yearly-price",
         btn_color: "tp-green-btn",

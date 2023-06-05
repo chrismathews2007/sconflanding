@@ -14,17 +14,16 @@ import Cta_Area from '@/components/pages/landing/cta';
 import Discover from '@/components/pages/landing/discover';
 import Unsure from '@/components/pages/landing/unsure';
 import Feedback from '@/components/pages/landing/feedback';
+import SliderTop from '@/common/slider';
+import ForumTracks from '@/components/pages/landing/forumTracks';
 
 const index = () => {
 	return (
 		<Wrapper>
 			<SEO pageTitle='Home' />
 			<Layout topHeader>
-				<div
-					style={{
-						width: '100%',
-						paddingTop: 80,
-					}}>
+				<div className='home_layout'>
+					<SliderTop />
 					<ValueProp />
 					{/* <Brands /> */}
 					<Cta_Area />
@@ -32,6 +31,7 @@ const index = () => {
 					<Discover />
 					<Pricing />
 					<ExploreSeries />
+					<ForumTracks />
 					<Unsure />
 					<Feedback />
 					<Faq />

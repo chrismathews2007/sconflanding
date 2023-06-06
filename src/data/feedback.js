@@ -43,7 +43,7 @@ const feedback = [
 		id: 4,
 		img: 'assets/img/testimony/Ugo Chijiutomi.jpeg',
 		name: 'Ugo Chijiutomi',
-		title: 'Internggional Speaker | Transformational Coach',
+		title: 'International Speaker | Transformational Coach',
 		des: (
 			<>
 				It was such an honour speaking at the global women conference "women

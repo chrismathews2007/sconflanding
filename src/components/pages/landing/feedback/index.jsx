@@ -67,7 +67,7 @@ const Feedback = () => {
                 Speakers!
               </Text>
               <Link className="tp-btn-second large" href="/">
-                Buy Now
+                Register Now
               </Link>
             </div>
             <div className="gap-4 text-center ">
@@ -80,10 +80,10 @@ const Feedback = () => {
             loop={isLoop}
             className="swiper-container tp-test-active pt-40"
           >
-            {testimonials.map((item) => {
+            {testimonials.map((item, i) => {
               const { photo, testimonial, affiliation } = item.fields;
               return (
-                <SwiperSlide key={item.id}>
+                <SwiperSlide key={i}>
                   <div className="tp-testi p-relative">
                     <div className="tp-testi__avata">
                       <img

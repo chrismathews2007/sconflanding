@@ -33,7 +33,7 @@
             top: 50%;
             right: 45px;
             transform: translateY(-50%);
-            content: "\f062";
+            content: "\f077";
             background: none;
             color: var(--tp-theme-blue);
             @media #{$xs} {
@@ -43,7 +43,7 @@
         &.collapsed {
             &::after {
                 @include transition(.3s);
-                content: "\f063";
+                content: "\f078";
                 color: var(--tp-theme-primary);
             }
         }

@@ -3,16 +3,17 @@ import pricing_data from '@/data/pricing-data';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-const Pricing = ({ dark, p_bottom }) => {
+const Pricing = ({ dark, p_bottom, title, description, earlyBg }) => {
 	const [isAccomdation, setIsAccomdation] = useState(false);
 	return (
 		<>
-			<section className={`pricing-area pt-40 pb-40 d-flex align-items-center`}>
+			<section className={`pricing-area pt-80 pb-80 d-flex align-items-center`}>
 				<div className='container'>
-					<div className='row text-center'>
-						<div className='col-lg-12 col-md-12 col-12'>
+					<div className='row text-center justify-content-center'>
+						<div className='col-xl-8'>
 							<div className='tp-section' style={{ marginBottom: 40 }}>
-								<Text h2>Our Upcoming Forums</Text>
+								<Text h2>{title}</Text>
+								<Text size={25}>{description}</Text>
 							</div>
 						</div>
 					</div>
@@ -27,7 +28,9 @@ const Pricing = ({ dark, p_bottom }) => {
 										className='d-flex justify-content-center p-2 position-absolute'
 										style={{ right: -10, top: -10 }}>
 										<div
-											className='text-center bg-danger'
+											className={`text-center bg-${
+												earlyBg ? earlyBg : 'danger'
+											}`}
 											style={{ padding: '5px 15px' }}>
 											<Text small color='text-white'>
 												Super Early Bird

@@ -4,6 +4,11 @@
     &__sub-heading {
         display: inline-block;
     }
+    &_w_gradient {
+        background: -webkit-linear-gradient(45deg, #ec4899, #d946ef 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     &__h1 {
         font-size: 80px;
         font-weight: 700;

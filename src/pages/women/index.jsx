@@ -1,20 +1,43 @@
-import React from "react";
-import Layout from "@/layout/layout";
-import SEO from "@/components/seo";
-import Wrapper from "@/layout/wrapper";
-import Intro from "@/components/pages/women/intro";
+import React from 'react';
+import SEO from '@/components/seo';
+import Wrapper from '@/layout/wrapper';
+import Layout from '@/layout/womenLayout';
+import HomeBanner from '@/components/pages/women/home-banner';
+import ForumRegister from '@/components/pages/women/forumRegister';
 
-const index = () => {
-  return (
-    <Wrapper>
-      <SEO pageTitle="Home" />
-      <Layout topHeader>
-        <div className="home_layout">
-          <Intro />
-        </div>
-      </Layout>
-    </Wrapper>
-  );
+import { client } from '@/components/contentful/client';
+import FaqArea from '@/components/pages/landing/faq';
+import Pricing from '@/components/pages/landing/pricing';
+
+const index = ({ faq }) => {
+	return (
+		<Wrapper>
+			<SEO pageTitle='Home' />
+			<Layout topHeader>
+				<div className=''>
+					<HomeBanner />
+					<ForumRegister />
+					<Pricing
+						title='Register Now'
+						description='Most commonly asked questions by our attendees to help you make decision to attend most important event which you should not to miss to experience global dias'
+						earlyBg='warning'
+					/>
+					<FaqArea faq={faq} />
+				</div>
+			</Layout>
+		</Wrapper>
+	);
 };
 
 export default index;
+
+export async function getStaticProps() {
+	const { items } = await client.getEntries({
+		content_type: 'faq',
+	});
+	return {
+		props: {
+			faq: items,
+		},
+	};
+}

@@ -37,11 +37,14 @@ const footer_content = {
 };
 
 const { footer_info, copy_right_text } = footer_content;
-const Footer = () => {
+const Footer = ({ themeBg }) => {
 	return (
 		<>
 			<footer>
-				<div className='footer-area theme-bg pt-100 pb-50'>
+				<div
+					className={`footer-area ${
+						themeBg ? themeBg : 'theme-bg'
+					} pt-100 pb-50`}>
 					<div className='container'>
 						<div className='row'>
 							<div className='col-xl-4 col-lg-4 col-md-6'>

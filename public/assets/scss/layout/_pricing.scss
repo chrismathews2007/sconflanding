@@ -9,6 +9,7 @@
 .tp-price {
     padding: 20px;
     border: 1px solid var(--tp-border-primary);
+    background: white;
     @include transition(.3s);
     border-top: 4px solid var(--tp-theme-blue);
     @media #{$lg,$xs} {
@@ -107,6 +108,13 @@
 .tp-pink-btn {
     & a {
         background-color: var(--tp-theme-pink);
+    }
+}
+
+.gradient-women {
+    border-top: 4px solid $majorelleblue;
+    &:hover {
+        border-top: 4px solid $blueviolet;
     }
 }
 

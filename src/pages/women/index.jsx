@@ -8,6 +8,8 @@ import ForumRegister from '@/components/pages/women/forumRegister';
 import { client } from '@/components/contentful/client';
 import FaqArea from '@/components/pages/landing/faq';
 import Pricing from '@/components/pages/landing/pricing';
+import ForumTracks from '@/components/pages/landing/forumTracks';
+import Venue from '@/components/pages/women/venue';
 
 const index = ({ faq }) => {
 	return (
@@ -16,13 +18,17 @@ const index = ({ faq }) => {
 			<Layout topHeader>
 				<div className=''>
 					<HomeBanner />
-					<ForumRegister />
+					<ForumRegister gradient='text_w_gradient' />
+					<ForumTracks gradient='text_w_gradient' />
+					<Venue gradient='text_w_gradient' />
 					<Pricing
 						title='Register Now'
 						description='Most commonly asked questions by our attendees to help you make decision to attend most important event which you should not to miss to experience global dias'
-						earlyBg='warning'
+						themebg='gradient-women'
+						earlyBg
+						gradient='text_w_gradient'
 					/>
-					<FaqArea faq={faq} />
+					<FaqArea faq={faq} gradient='text_w_gradient' />
 				</div>
 			</Layout>
 		</Wrapper>

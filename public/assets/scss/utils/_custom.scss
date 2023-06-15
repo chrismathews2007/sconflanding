@@ -1,0 +1,45 @@
+@import'../utils/colors';
+@mixin bg-variant ($color1, $color2) {
+    background-color: $color1;
+    color: $color2;
+}
+
+@mixin text-variant($color1) {
+    color: $color1;
+}
+
+.bg-majorelleblue {
+    @include bg-variant($majorelleblue, white);
+}
+
+.bg-gradient-women {
+    background: linear-gradient(to left, $majorelleblue 0%, $blueviolet 100%);
+}
+
+.bg-gradient-women-top {
+    background: linear-gradient(to top, $majorelleblue 0%, $blueviolet 100%);
+}
+
+.bg-gradient-women-bottom {
+    background: linear-gradient(to bottom, $majorelleblue 0%, $blueviolet 100%);
+}
+
+.text-majorelleblue {
+    @include text-variant($majorelleblue);
+}
+
+.bg-blueviolet {
+    @include bg-variant($blueviolet, white);
+}
+
+.text-blueviolet {
+    @include text-variant($blueviolet);
+}
+
+.btn-majorelleblue {
+    @include bg-variant($majorelleblue, white)
+}
+
+.btn-blueviolet {
+    @include bg-variant($blueviolet, white)
+}

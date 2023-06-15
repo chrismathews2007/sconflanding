@@ -1,19 +1,17 @@
 import AnswerQuestion from '@/common/answer-question';
+import Text from '@/components/UI/text';
 import React from 'react';
 
-const FaqArea = ({ faq }) => {
+const FaqArea = ({ faq, gradient }) => {
 	return (
 		<section className='faq-area pt-40 pb-40 d-flex align-items-center'>
 			<div className='container'>
 				<div className='row text-center'>
 					<div className='col-lg-12 col-md-12 col-12'>
 						<div className='tp-section'>
-							<span className='tp-section__sub-title left-line right-line mb-20'>
-								Faq
-							</span>
-							<h3 className='tp-section__title mb-70'>
+							<Text Text h2 gradient={gradient}>
 								Frequently Asked Questions
-							</h3>
+							</Text>
 						</div>
 					</div>
 				</div>

@@ -5,7 +5,7 @@
         display: inline-block;
     }
     &_w_gradient {
-        background: -webkit-linear-gradient(45deg, #ec4899, #d946ef 80%);
+        background: -webkit-linear-gradient(45deg, $majorelleblue, #d946ef 80%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

@@ -23,9 +23,9 @@ const menu_data = [{
         active: "",
         sub_menus: [
             { link: "/women", title: "Women" },
-            { link: "/", title: "Health" },
-            { link: "/", title: "Technology" },
-            { link: "/", title: "Science" },
+            { link: "/health", title: "Health" },
+            { link: "/technology", title: "Technology" },
+            { link: "/science", title: "Science" },
         ],
     },
     {

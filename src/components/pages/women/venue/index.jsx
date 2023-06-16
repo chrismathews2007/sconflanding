@@ -33,7 +33,7 @@ function Venue({ gradient }) {
 				</div>
 				<div className='row mt-80'>
 					<div className='col-lg-6 d-flex flex-column justify-content-center'>
-						<Text h2 gradient={gradient}>
+						<Text h2 mb='mb-0'>
 							MGM Grand Hotel
 						</Text>
 						<div className='mt-30 mb-30'>

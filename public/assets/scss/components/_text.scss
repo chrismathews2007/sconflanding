@@ -9,6 +9,21 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    &_h_gradient {
+        background: -webkit-linear-gradient(45deg, #004d7a, #00bf72 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &_t_gradient {
+        background: -webkit-linear-gradient(45deg, #083194, #0575e6 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &_s_gradient {
+        background: -webkit-linear-gradient(45deg, #00a1ba, #36C486 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     &__h1 {
         font-size: 80px;
         font-weight: 700;

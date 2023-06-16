@@ -42,7 +42,7 @@ export default function Intro() {
 						})}
 					</div>
 					<div className='valueprop__btn mt-10 d-flex align-items-center'>
-						<button type='button' class='tp-btn large me-3'>
+						<button type='button' className='tp-btn large me-3'>
 							Brochure
 						</button>
 						<Link className='tp-btn-second large ' href='/'>

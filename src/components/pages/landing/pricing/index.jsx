@@ -1,7 +1,12 @@
 import Text from '@/components/UI/text';
-import pricing_data from '@/data/pricing-data';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Select from 'react-select';
+
+const options = [
+	{ value: '1', label: 'One night' },
+	{ value: '2', label: 'Two nights' },
+];
 
 const Pricing = ({
 	dark,
@@ -11,8 +16,36 @@ const Pricing = ({
 	themebg,
 	earlyBg,
 	gradient,
+	pricing_data,
 }) => {
 	const [isAccomdation, setIsAccomdation] = useState(false);
+	const [acc, setAcc] = React.useState();
+	const [hotel, setHotel] = React.useState(249);
+	const [totalHotel, setTotalHotel] = React.useState();
+	const [nights, setNights] = React.useState(0);
+	const [person, setPerson] = React.useState(1);
+	const [personPrice, setPersonPrice] = React.useState(100);
+	const [price, setPrice] = React.useState(0);
+
+	const onAddHotel = (e) => {
+		setAcc(e.id);
+		setIsAccomdation(!isAccomdation);
+		setPrice(e.price);
+		setNights(0);
+		setPerson(1);
+		setTotalHotel();
+		console.log(e);
+	};
+
+	const handleChange = (selected) => {
+		setNights(selected.value);
+		let hotel_price =
+			selected.value == 2 ? hotel + 250 : hotel * selected.value;
+		setTotalHotel(hotel_price);
+		// console.log('selected', selected.value);
+		// console.log('Setting hotel price: ', hotel_price);
+	};
+
 	return (
 		<>
 			<section
@@ -64,8 +97,8 @@ const Pricing = ({
 										</div>
 									</div>
 									<div
-										className='tp-price__features tp-yearly-list mb-55'
-										style={{ minHeight: 150 }}>
+										className='tp-price__features tp-yearly-list mb-15'
+										style={{ minHeight: item.accomdation ? 160 : 200 }}>
 										<ul>
 											{item.price_features.map((list, i) => (
 												<li key={i} className={`${list.active}`}>
@@ -74,17 +107,38 @@ const Pricing = ({
 											))}
 										</ul>
 									</div>
-									<div className=' mb-3 d-flex align-items-center'>
-										<input
-											className='mt-0 me-2'
-											type='checkbox'
-											id={item.id}
-											onClick={() => setIsAccomdation(!isAccomdation)}
-										/>
-										<label for={item.id} style={{ fontSize: 12 }}>
-											i'd like to add accomdation
-										</label>
-									</div>
+									{item.accomdation && (
+										<>
+											<div className=' mb-3 d-flex align-items-center'>
+												<input
+													className='mt-0 me-2'
+													type='checkbox'
+													id={item.id}
+													onClick={() => onAddHotel(item)}
+												/>
+												<label htmlFor={item.id} style={{ fontSize: 12 }}>
+													i'd like to add accomdation
+												</label>
+											</div>
+											{acc == item.id && isAccomdation ? (
+												<>
+													<Select
+														className='mt-15 mb-15'
+														options={options}
+														onChange={handleChange}
+														placeholder='Select no. of nights'
+													/>
+													{totalHotel && (
+														<div className='alert alert-info p-3'>
+															<Text>Base Price: {item.price}</Text>
+															<Text mb='mt-5 mb-5'>Hote: {totalHotel}</Text>
+															<Text>Total: {price + totalHotel}</Text>
+														</div>
+													)}
+												</>
+											) : null}
+										</>
+									)}
 
 									<div
 										className={`tp-price__btn ${
@@ -93,8 +147,10 @@ const Pricing = ({
 										<Link
 											className='w-100'
 											href={`${
-												isAccomdation
+												nights == 1
 													? item.paymentWithAccomdation
+													: nights == 2
+													? item.paymentWithAccomdation2
 													: item.payment
 											}`}>
 											Register

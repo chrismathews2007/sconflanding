@@ -10,6 +10,7 @@ import FaqArea from '@/components/pages/landing/faq';
 import Pricing from '@/components/pages/landing/pricing';
 import ForumTracks from '@/components/pages/landing/forumTracks';
 import Venue from '@/components/pages/women/venue';
+import { pricing_data } from '@/data/pricing-data';
 
 const index = ({ faq }) => {
 	return (
@@ -17,17 +18,18 @@ const index = ({ faq }) => {
 			<SEO pageTitle='Home' />
 			<Layout topHeader>
 				<div className=''>
-					<HomeBanner />
+					<HomeBanner title='World Women Forum' gradient='bg-gradient-women' />
 					<ForumRegister gradient='text_w_gradient' />
 					<ForumTracks gradient='text_w_gradient' />
-					<Venue gradient='text_w_gradient' />
 					<Pricing
 						title='Register Now'
 						description='Most commonly asked questions by our attendees to help you make decision to attend most important event which you should not to miss to experience global dias'
 						themebg='gradient-women'
 						earlyBg
 						gradient='text_w_gradient'
+						pricing_data={pricing_data}
 					/>
+					<Venue gradient='text_w_gradient' />
 					<FaqArea faq={faq} gradient='text_w_gradient' />
 				</div>
 			</Layout>

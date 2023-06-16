@@ -22,12 +22,12 @@ const DATA = [
 	},
 ];
 
-const HomeBanner = () => {
+const HomeBanner = ({ title, gradient }) => {
 	const [isVideoOpen, setIsVideoOpen] = useState(false);
 
 	return (
 		<>
-			<section className='banner-area p-relative pt-90'>
+			<section className={`banner-area ${gradient} p-relative pt-90`}>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-xl-6'>
@@ -39,7 +39,7 @@ const HomeBanner = () => {
 										color='text-white-50'
 									/>
 									<Text h2 className='mb-20' color='text-white'>
-										World Women Forum
+										{title}
 									</Text>
 									<Text h3 color='text-warning'>
 										November 1-2, Las Vegas USA
@@ -62,7 +62,7 @@ const HomeBanner = () => {
 										})}
 									</div>
 									<div className='valueprop__btn mt-25 d-flex align-items-center'>
-										<button type='button' class='tp-btn large me-3'>
+										<button type='button' className='tp-btn large me-3'>
 											Brochure
 										</button>
 										<Link className='tp-btn-second' href='/'>

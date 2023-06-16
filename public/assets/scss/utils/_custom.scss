@@ -12,8 +12,44 @@
     @include bg-variant($majorelleblue, white);
 }
 
+.bg-blueviolet {
+    @include bg-variant($blueviolet, white);
+}
+
+.bg-darkcerulean {
+    @include bg-variant(#004d7a, white);
+}
+
+.bg-gogreen {
+    @include bg-variant(#00bf72, white);
+}
+
 .bg-gradient-women {
     background: linear-gradient(to left, $majorelleblue 0%, $blueviolet 100%);
+}
+
+.bg-gradient-health {
+    background: linear-gradient(to left, #004d7a 0%, #00bf72 100%);
+}
+
+.bg-gradient-tech {
+    background: linear-gradient(to left, #0575e6 0%, #083194 100%);
+}
+
+.bg-gradient-sceince {
+    background: linear-gradient(to left, #00a1ba 0%, #36C486 100%);
+}
+
+.bg-gradient-sceince-bottom {
+    background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+}
+
+.bg-gradient-tech-bottom {
+    background: linear-gradient(to right top, #0575e6, #0b5eca, #0b47af, #083194, #021b79);
+}
+
+.bg-gradient-health-bottom {
+    background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 .bg-gradient-women-top {
@@ -26,10 +62,6 @@
 
 .text-majorelleblue {
     @include text-variant($majorelleblue);
-}
-
-.bg-blueviolet {
-    @include bg-variant($blueviolet, white);
 }
 
 .text-blueviolet {

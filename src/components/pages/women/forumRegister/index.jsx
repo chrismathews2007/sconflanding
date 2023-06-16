@@ -22,7 +22,7 @@ function ForumRegister({ gradient }) {
 							learn and network with passionate minds like you.
 						</Text>
 						<div className='mt-25 d-flex align-items-center justify-content-center'>
-							<button type='button' class='tp-btn bg-majorelleblue me-3'>
+							<button type='button' className='tp-btn bg-majorelleblue me-3'>
 								Brochure
 							</button>
 							<Link className='tp-btn-second' href='/'>

@@ -22,9 +22,12 @@ function ForumRegister({ gradient }) {
 							learn and network with passionate minds like you.
 						</Text>
 						<div className='mt-25 d-flex align-items-center justify-content-center'>
-							<button type='button' className='tp-btn bg-majorelleblue me-3'>
+							<a
+								className='tp-btn bg-majorelleblue me-3'
+								download={'star_women_forum_brochure.pdf'}
+								href='/assets/pdf/women.pdf'>
 								Brochure
-							</button>
+							</a>
 							<Link className='tp-btn-second' href='/'>
 								Register Now
 							</Link>

@@ -71,7 +71,7 @@ export default function ExploreSeries() {
         </div>
         <div className="row mt-40 mb-40 justify-content-center">
           {DATA.map((item, i) => {
-            return <Card data={item} />;
+            return <Card data={item} key={i} />;
           })}
         </div>
         <div className="gap-4 text-center ">

@@ -62,9 +62,15 @@ const HomeBanner = ({ title, gradient }) => {
 										})}
 									</div>
 									<div className='valueprop__btn mt-25 d-flex align-items-center'>
-										<button type='button' className='tp-btn large me-3'>
+										{/* <button type='button' className='tp-btn large me-3'>
 											Brochure
-										</button>
+										</button> */}
+										<a
+											className='tp-btn large me-3'
+											download={'star_women_forum_brochure.pdf'}
+											href='/assets/pdf/women.pdf'>
+											Brochure
+										</a>
 										<Link className='tp-btn-second' href='/'>
 											Register Now
 										</Link>

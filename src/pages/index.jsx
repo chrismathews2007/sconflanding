@@ -17,6 +17,7 @@ import Feedback from '@/components/pages/landing/feedback';
 import SliderTop from '@/common/slider';
 import ForumTracks from '@/components/pages/landing/forumTracks';
 import { client } from '@/components/contentful/client';
+import Conferences from '@/components/pages/landing/Conferences';
 
 export async function getStaticProps() {
 	const { items } = await client.getEntries({
@@ -42,6 +43,7 @@ const index = ({ faq }) => {
 					<Steps />
 					<Discover />
 					<ExploreSeries />
+					<Conferences />
 					<Unsure />
 					<Feedback />
 					<Faq faq={faq} />

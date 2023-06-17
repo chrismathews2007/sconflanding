@@ -49,6 +49,7 @@ const Pricing = ({
 	return (
 		<>
 			<section
+				id='registration'
 				className={`pricing-area pt-80 pb-80 d-flex align-items-center wow fadeInUp`}
 				data-wow-duration='.8s'
 				data-wow-delay='.2s'>

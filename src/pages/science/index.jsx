@@ -20,14 +20,14 @@ const index = ({ faq }) => {
 				<div className=''>
 					<HomeBanner
 						title='World Science Forum'
-						gradient='bg-gradient-sceince-bottom '
+						gradient='bg-gradient-science-bottom '
 					/>
 					<ForumRegister gradient='text_s_gradient' />
 					<ForumTracks gradient='text_s_gradient' />
 					<Pricing
 						title='Register Now'
 						description='Most commonly asked questions by our attendees to help you make decision to attend most important event which you should not to miss to experience global dias'
-						themebg='gradient-sceince'
+						themebg='gradient-science'
 						earlyBg
 						gradient='text_s_gradient'
 						pricing_data={pricing_sceince}

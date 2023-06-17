@@ -28,7 +28,7 @@ function ForumRegister({ gradient }) {
 								href='/assets/pdf/women.pdf'>
 								Brochure
 							</a>
-							<Link className='tp-btn-second' href='/'>
+							<Link className='tp-btn-second' href='#registration'>
 								Register Now
 							</Link>
 						</div>

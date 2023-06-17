@@ -15,6 +15,30 @@
     @media #{$lg,$xs} {
         padding: 35px 20px 45px 20px;
     }
+    &.gradient-women {
+        border-top: 4px solid $majorelleblue;
+        &:hover {
+            border-top: 4px solid $blueviolet;
+        }
+    }
+    &.gradient-tech {
+        border-top: 4px solid #0575e6;
+        &:hover {
+            border-top: 4px solid #083194;
+        }
+    }
+    &.gradient-health {
+        border-top: 4px solid #004d7a;
+        &:hover {
+            border-top: 4px solid #00bf72;
+        }
+    }
+    &.gradient-science {
+        border-top: 4px solid #00a1ba;
+        &:hover {
+            border-top: 4px solid #36C486;
+        }
+    }
     &:hover {
         border-top: 4px solid var(--tp-theme-blue);
     }
@@ -108,13 +132,6 @@
 .tp-pink-btn {
     & a {
         background-color: var(--tp-theme-pink);
-    }
-}
-
-.gradient-women {
-    border-top: 4px solid $majorelleblue;
-    &:hover {
-        border-top: 4px solid $blueviolet;
     }
 }
 

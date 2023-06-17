@@ -24,7 +24,9 @@ const Header = ({ topHeader }) => {
 							<div className='tp-mob-logo'>
 								<Link href='/'>
 									<img
-										src={`/assets/img/logo/${sticky ? 'logo' : 'logo'}.png`}
+										src={`/assets/img/logo/${
+											sticky ? 'logo_lite' : 'logo_lite'
+										}.png`}
 										alt='logo'
 									/>
 								</Link>

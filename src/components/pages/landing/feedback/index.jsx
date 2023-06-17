@@ -55,7 +55,7 @@ const Feedback = () => {
 	return (
 		<>
 			<section
-				className='testimonial-area testimonial-bg pt-40 pb-40 d-flex align-items-center'
+				className='testimonial-area testimonial-bg pt-40 pb-40 d-flex align-items-center grey-bg'
 				style={{ backgroundImage: `url(/assets/img/shape/shape-bg-02.png)` }}
 				data-background='assets/img/shape/shape-bg-02.png'>
 				<div className='container'>
@@ -82,17 +82,18 @@ const Feedback = () => {
 							const { photo, testimonial, affiliation } = item.fields;
 							return (
 								<SwiperSlide key={i}>
-									<div className='tp-testi p-relative'>
+									<div className='tp-testi grey-bg p-relative'>
 										<div className='tp-testi__avata'>
 											<img
 												src={photo.fields.file.url}
 												alt='testimonial-avata'
 												width='100'
+												height='100'
 											/>
 										</div>
 										<div className='tp-testi__content text-center '>
-											<Text>{testimonial}</Text>
-											<Text h5 mb='mb-0 mt-25'>
+											<Text size={20}>{testimonial}</Text>
+											<Text h3 mb='mb-0 mt-25'>
 												{item.name}
 											</Text>
 											<Text small>{affiliation}</Text>

@@ -91,7 +91,7 @@ const Header = ({ topHeader }) => {
 										<circle cx='2' cy='7' r='2' fill='#0E63FF' />
 										<circle cx='2' cy='12' r='2' fill='#0E63FF' />
 									</svg>
-									<span>Help Desk :</span> +1(234)432-STAR
+									<span>Star Care :</span> +1(234)432-STAR
 								</a>
 							</div>
 						</div>

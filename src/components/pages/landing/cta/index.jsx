@@ -1,4 +1,6 @@
 import Text from '@/components/UI/text';
+import Rating from '@/components/rating/Rating';
+import Link from 'next/link';
 import React from 'react';
 
 const Cta_Area = () => {
@@ -15,6 +17,15 @@ const Cta_Area = () => {
 								Leverage Our Global Platforms for Targeted Audience engagement
 							</Text>
 							<span style={{ fontSize: 60 }}>🎯</span>
+						</div>
+						<div className='gap-4 d-flex justify-content-center flex-column align-items-center '>
+							<Rating color='text-white' />
+							<Link className='tp-btn-second large' href='#conferencesSection'>
+								Register Now
+							</Link>
+						</div>
+						<div className='gap-4 text-center mt-15'>
+							<img src='/assets/img/paymentcards.png' height='30' />
 						</div>
 					</div>
 				</div>

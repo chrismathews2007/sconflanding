@@ -5,6 +5,7 @@ import Link from 'next/link.js';
 import { Navigation } from 'swiper';
 import 'swiper/css/effect-fade';
 import { EffectFade } from 'swiper';
+import HomeBanner from '@/components/pages/women/home-banner.jsx';
 
 // slider setting
 const setting = {
@@ -34,11 +35,16 @@ const SliderTop = () => {
 					{banner_data.map((item) => (
 						<SwiperSlide key={item.id}>
 							<div className='swiper-slide'>
-								<div className='tp-team'>
+								{/* <div className='tp-team'>
 									<div className='tp-team__thumb fix'>
 										<img src={item.img} alt='team-thumb' className='w-100' />
 									</div>
-								</div>
+								</div> */}
+								<HomeBanner
+									title={item.title}
+									gradient={item.gradient}
+									brochure={item.brochure}
+								/>
 							</div>
 						</SwiperSlide>
 					))}

@@ -141,10 +141,7 @@ const Pricing = ({
 										</>
 									)}
 
-									<div
-										className={`tp-price__btn ${
-											themebg ? `bg-${themebg}` : item.btn_color
-										}`}>
+									<div className='tp-btn-second large'>
 										<Link
 											className='w-100'
 											href={`${

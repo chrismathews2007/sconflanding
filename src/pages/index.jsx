@@ -35,7 +35,7 @@ const index = ({ faq }) => {
 		<Wrapper>
 			<SEO pageTitle='Home' />
 			<Layout topHeader>
-				<div className='home_layout'>
+				<div>
 					<SliderTop />
 					<ValueProp />
 					{/* <Brands /> */}

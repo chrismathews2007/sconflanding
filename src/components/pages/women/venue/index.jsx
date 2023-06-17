@@ -1,4 +1,5 @@
 import Text from '@/components/UI/text';
+import Link from 'next/link';
 import React from 'react';
 
 function Venue({ gradient }) {
@@ -55,6 +56,14 @@ function Venue({ gradient }) {
 									);
 								})}
 							</div>
+						</div>
+						<div className='valueprop__btn mt-10'>
+							<Link className='tp-btn-second large ' href='#registration'>
+								Register Now
+							</Link>
+						</div>
+						<div>
+							<img src='/assets/img/paymentcards.png' height='30' />
 						</div>
 					</div>
 					<div className='col-lg-6'>

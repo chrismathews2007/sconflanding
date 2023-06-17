@@ -16,7 +16,7 @@ function Rating({ value, starColor, color }) {
 						);
 					})}
 			</span>
-			<Text color={color}>Rated 4.9/5 by 1000’s of verified attendies</Text>
+			<Text color={color}>Rated 4.9/5 by 1000’s of verified attendees</Text>
 		</div>
 	);
 }

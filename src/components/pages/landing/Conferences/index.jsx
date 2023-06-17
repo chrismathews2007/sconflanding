@@ -46,24 +46,27 @@ export default function Conferences() {
 				<div className='row'>
 					{DATA.map((item) => {
 						return (
-							<div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-20'>
-								<Link href={`/${item.path}`}>
-									<div
-										className={`card d-flex flex-column justify-content-center align-items-center bg-gradient-${item.bg}`}
-										style={{ minHeight: 150 }}>
-										<div className='w-100 p-2 text-center'>
-											<img
-												src={item.image}
-												className='w-100 mb-10'
-												style={{ height: 150, objectFit: 'cover' }}
-												alt=''
-											/>
-											<Text bold color='text-white'>
-												{item.title}
-											</Text>
-										</div>
+							<div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-20 '>
+								<div
+									className={` d-flex flex-column justify-content-center align-items-center bg-gradient-${item.bg} rounded`}
+									style={{ minHeight: 150 }}>
+									<div className='w-100 p-2 text-center'>
+										<img
+											src={item.image}
+											className='w-100 mb-10'
+											style={{ height: 150, objectFit: 'cover' }}
+											alt=''
+										/>
+										<Text bold color='text-white'>
+											{item.title}
+										</Text>
+										<Link
+											className='tp-bt-btn pt-10 pb-10 mt-10 mb-10'
+											href={`/${item.path}`}>
+											Know More
+										</Link>
 									</div>
-								</Link>
+								</div>
 							</div>
 						);
 					})}

@@ -3,7 +3,7 @@
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
-    padding: 20px 42px;
+    padding: 10px 42px;
     border-radius: 5px;
     background: var(--tp-common-white);
     &:hover {
@@ -15,10 +15,10 @@
         text-transform: uppercase;
     }
     @media #{$xxl} {
-        padding: 20px 30px;
+        padding: 10px 30px;
     }
     @media #{$xl} {
-        padding: 20px 15px;
+        padding: 10px 15px;
     }
     @media #{$md} {
         box-shadow: rgba(100, 100, 111, 0.1) 1px 5px 20px 1px;

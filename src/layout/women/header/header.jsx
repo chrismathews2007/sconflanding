@@ -25,7 +25,7 @@ const Header = ({ topHeader }) => {
 								<Link href='/'>
 									<img
 										src={`/assets/img/logo/${
-											sticky ? 'logo_lite' : 'logo'
+											sticky ? 'logo' : 'logo_lite'
 										}.png`}
 										alt='logo'
 									/>

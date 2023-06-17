@@ -23,11 +23,12 @@ const Header = ({ topHeader }) => {
 						<div className='col-md-4 col-10'>
 							<div className='tp-mob-logo'>
 								<Link href='/'>
-									{sticky ? (
-										<img src='/assets/img/logo/logo.png' alt='logo' />
-									) : (
-										<img src='/assets/img/logo/logo_lite.png' alt='logo' />
-									)}
+									<img
+										src={`/assets/img/logo/${
+											sticky ? 'logo_lite' : 'logo'
+										}.png`}
+										alt='logo'
+									/>
 								</Link>
 							</div>
 						</div>
